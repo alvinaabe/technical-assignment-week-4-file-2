@@ -1,0 +1,19 @@
+1.membuat folder kosong dengan namamu sendiri < mkadir alvina.md >
+2.membuat file di dalam folder tersebut dengan nama README.md, isi file tersebut dengan kalimat 
+"Halo perkenalkan aku halaman utama" < touch README.md , selanjutnya buka VScode Lalu masuk ke file README.md, print ("Halo perkenalkan aku halaman utama") ctrl+s, lalu masuk ke  git Bash, ketik git add README.md > 
+3.inisialisasi folder tersebut dengan Git, kemudian simpan perubahan menggunakan commit dengan pesan 
+"Komit pertama" < git commit -m "Komit pertama" >
+4.Ganti teks sebelumnya dengan `"Hello world" < masuk ke VScode degan file yang tadi ganti teks menjadi print("Hello world") ctrl+s, lalu masuk ke  git Bash, ketik git commit -am "Menganti tulisan"  >
+5.Tampilkan isi teks tersebut pada command line menggunakan command cat < cat RADME.md >
+6.Ternyata kamu tidak ingin perubahan tersebut, dan ingin kembali ke perubahan seperti commit yang terakhir. lakukan teknik git backtracking untuk mengembalikan ke perubahan commit yang terakhir. < git checkout (5 digit pertama commit hasnya ) >
+7.buat branch baru dengan nama cv, hal ini berguna agar histori kita tidak tercampur < git branch cv >
+8.pindah branch ke dalam cv, kemudian buat file dengan nama cv.txt dan isi file tersebut dengan kalimat:
+"Ini adalah file CV" < git checkout cv, kemudian touch cv.txt, dan masuk ke dalam file  cv.txt menggunakan VScode tulis Print("Ini adalah file CV") ctrl+s, lalu masuk ke  git Bash, ketik git add cv.txt >
+9.kemudian simpan perubahan menggunakan commit dengan pesan
+"CV awal"  < git commit -m "CV awal" >
+10.tambahkan 3 perusahaan yang akan kamu lamar, dan setiap tulisan 1 nama perusahaan kamu harus melakukan dokumentasi dan menyimpan perubahan menggunakan commit
+kembali ke master cabang < touch indofood.txt  toyota.txt  wings.txt , git add indofood.txt  ? git commit -m " menambahkan perusahaan ke 1", git add toyota.txt ? git commit -m "menambahkan perusahaan ke 2", git add wings.txt ?git commit -m "menambahkan perusahaan ke 3"> 
+11. kembali kebranch master < git checkout master > 
+12. ubah file README.md menjadi "Halo perkenalkan aku halaman utama Ini adalah update pertama pada branch master" < git checkout HEAD README.md, buka file di VScode README.md lalu tulis Print("Halo perkenalkan aku halaman utama Ini adalah update pertama pada branch master") ctrl+s, git commit -am "Menganti tulisan ke 2">
+13. gabungkan cabang cv ke dalam cabang master menggunakan perintah git merge < git checkout master, setelah itu git marge cv.txt> 
+14. unggah proyek Repositori Git tersebut ke dalam GitHub< git push -u origin master >
